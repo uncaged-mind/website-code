@@ -1,0 +1,129 @@
+:root {
+
+    /* ===========================
+   COLORS
+=========================== */
+
+    --background: #050505;
+    --surface: #0d0d0d;
+    --surface-light: #151515;
+
+    --primary: #D4A64D;
+    --primary-light: #F0CB73;
+    --primary-dark: #A77723;
+
+    --text: #F7F7F7;
+    --muted: #A6A6A6;
+
+    --border: #262626;
+    --border-light: rgba(212, 166, 77, .20);
+
+    --white: #ffffff;
+    --black: #000000;
+
+
+    /* ===========================
+   SHADOWS
+=========================== */
+
+    --shadow-small:
+        0 6px 20px rgba(0, 0, 0, .25);
+
+    --shadow-medium:
+        0 18px 45px rgba(0, 0, 0, .35);
+
+    --shadow-large:
+        0 30px 80px rgba(0, 0, 0, .45);
+
+    --gold-glow:
+        0 0 40px rgba(212, 166, 77, .18);
+
+    --gold-glow-large:
+        0 0 120px rgba(212, 166, 77, .10);
+
+
+    /* ===========================
+   TYPOGRAPHY
+=========================== */
+
+    --heading-font: "Space Grotesk", sans-serif;
+    --body-font: "Inter", sans-serif;
+
+    --container: 1320px;
+
+    --section-padding: 100px;
+
+    --transition: .35s ease;
+
+
+    /* ===========================
+   BORDER RADIUS
+=========================== */
+
+    --radius-small: 8px;
+    --radius: 12px;
+    --radius-large: 18px;
+
+}
+
+
+/* ===========================
+   PAGE BACKGROUND
+=========================== */
+
+body {
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(212, 166, 77, .04),
+            transparent 35%),
+
+        radial-gradient(circle at bottom right,
+            rgba(212, 166, 77, .03),
+            transparent 40%),
+
+        #050505;
+
+}
+
+
+/* ===========================
+   SELECTION
+=========================== */
+
+::selection {
+
+    background: var(--primary);
+    color: #000;
+
+}
+
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: #090909;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #333;
+    border-radius: 20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: var(--primary);
+
+}

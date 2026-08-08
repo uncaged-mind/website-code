@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recommend a Guest | Uncaged Mind</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+
+<body>
+
+
+    <div id="navbar"></div>
+
+
+
+    <main>
+
+
+        <section class="nominate-page">
+
+
+            <div class="container">
+
+
+                <div class="nominate-page-grid">
+
+
+
+                    <div class="nominate-page-content">
+
+
+                        <p class="section-label">
+                            NOMINATE A GUEST
+                        </p>
+
+
+                        <h1>
+                            Know someone who belongs on
+                            <span>Uncaged Mind?</span>
+                        </h1>
+
+
+                        <p>
+                            Know someone with a story, insight, or perspective
+                            that deserves to be heard? Nominate yourself or
+                            someone else to be a guest on the podcast.
+                        </p>
+
+
+
+                    </div>
+
+
+
+
+                    <div class="nominate-form-card">
+
+
+                        <form id="recommendForm" class="recommend-form">
+
+
+                            <input type="text" id="name" placeholder="Your name" required>
+
+
+                            <input type="email" id="email" placeholder="Your email (optional)">
+
+
+
+                            <input type="text" id="guest" placeholder="Person you recommend" required>
+
+
+
+                            <input type="text" id="website" placeholder="Website or social media link">
+
+
+
+                            <textarea id="reason" placeholder="Why would they be a great guest?" required></textarea>
+
+
+
+                            <button class="primary-btn" type="submit">
+
+                                NOMINATE NOW
+
+                            </button>
+
+
+
+                            <p id="successMessage"></p>
+
+
+                        </form>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+        <div class="form-overlay" id="formOverlay">
+
+            <div class="form-message">
+
+                <i id="messageIcon"></i>
+
+                <h2 id="messageTitle"></h2>
+
+                <p id="messageText"></p>
+
+                <button class="primary-btn" id="closeMessage">
+                    CLOSE
+                </button>
+
+            </div>
+
+        </div>
+    </main>
+    <div id="footer"></div>
+
+    <script src="js/recommend.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+/* =========================
+   PAGE LOAD ANIMATIONS
+========================= */
+
+
+.hero-label,
+.hero h1,
+.hero-description,
+.hero-buttons,
+.scroll-indicator {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    animation: fadeUp 1s ease forwards;
+
+}
+
+
+
+.hero-label {
+
+    animation-delay: .2s;
+
+}
+
+
+.hero h1 {
+
+    animation-delay: .35s;
+
+}
+
+
+.hero-description {
+
+    animation-delay: .5s;
+
+}
+
+
+.hero-buttons {
+
+    animation-delay: .65s;
+
+}
+
+
+.scroll-indicator {
+
+    animation-delay: .9s;
+
+}
+
+
+
+@keyframes fadeUp {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(40px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+
+}
+
+
+
+/* =========================
+   MOVING BACKGROUND GLOWS
+========================= */
+
+
+.glow-one {
+
+
+    animation:
+
+        floatGlow 12s ease-in-out infinite alternate;
+
+
+}
+
+
+.glow-two {
+
+
+    animation:
+
+        floatGlow 15s ease-in-out infinite alternate-reverse;
+
+
+}
+
+
+
+@keyframes floatGlow {
+
+
+    from {
+
+
+        transform: translate(0, 0) scale(1);
+
+
+    }
+
+
+    to {
+
+
+        transform: translate(80px, 60px) scale(1.15);
+
+
+    }
+
+
+}
+
+
+
+/* =========================
+   BUTTON EFFECT
+========================= */
+
+
+.primary-btn {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.primary-btn::before {
+
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: white;
+
+    opacity: 0;
+
+    transition: .3s;
+
+
+}
+
+
+
+.primary-btn:hover::before {
+
+
+    opacity: .12;
+
+
+}
